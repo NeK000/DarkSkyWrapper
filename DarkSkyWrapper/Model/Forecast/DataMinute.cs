@@ -1,8 +1,10 @@
-﻿namespace DarkSkyWrapper.Model
+﻿using static DarkSkyWrapper.Util.DateLoader;
+namespace DarkSkyWrapper.Model
 {
     public class DataMinute
     {
-        public string Time { get; set; }
+        private string time;
+        public string Time { get => CorrectDate(time); set => time = value; }
         public string PrecipIntensity { get; set; }
         public string PrecipProbability { get; set; }
     }

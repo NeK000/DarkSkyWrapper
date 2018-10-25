@@ -1,8 +1,10 @@
-﻿namespace DarkSkyWrapper.Model
+﻿using static DarkSkyWrapper.Util.DateLoader;
+namespace DarkSkyWrapper.Model
 {
     public class CurrentlyData
     {
-        public string Time { get; set; }
+        private string time;
+        public string Time { get => CorrectDate(time); set => time = value; }
         public string Summary { get; set; }
         public string Icon { get; set; }
         public string NearestStormDistance { get; set; }
