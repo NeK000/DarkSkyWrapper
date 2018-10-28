@@ -1,5 +1,7 @@
 # DarkSkyWrapper
-DarkSkyWrapper API in C#
+Open source DarkSkyWrapper API in C#
+Design in a need for Semester Project at school
+
 
 
 #Usage
