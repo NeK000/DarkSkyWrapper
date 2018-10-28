@@ -6,7 +6,7 @@ namespace DarkSkyWrapper.Model
     {
         public string Summary { get; set; }
         public string Icon { get; set; }
-        public List<Data> Data { get; set; }
+        public List<DataDay> Data { get; set; }
 
     }
 }

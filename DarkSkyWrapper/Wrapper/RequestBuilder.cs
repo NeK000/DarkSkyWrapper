@@ -11,21 +11,21 @@ namespace DarkSkyWrapper.Wrapper
 
     public class RequestBuilder
     {
-        private string APIKey;
-        private float Latitude;
-        private float Longitude;
-        private Unit Unit;
-        private DateTime DateTime;
-        private Language Language;
-        private List<Exclude> Excludes;
-        private bool Extend;
+        private readonly string APIKey;
+        private readonly float Latitude;
+        private readonly float Longitude;
+        private readonly Unit Unit;
+        private readonly DateTime DateTime;
+        private readonly Language Language;
+        private readonly List<Exclude> Excludes;
+        private readonly bool Extend;
         private bool QuestionMark;
         public RequestBuilder(APIKey Key, GeoCoords coordinates, Unit unit, DateTime dateTime, Language language, List<Exclude> exclude, bool extendHourly)
         {
             QuestionMark = false;
             APIKey = Key.APIKeyValue;
-            Latitude = coordinates.lat.Lat;
-            Longitude = coordinates.lon.Lon;
+            Latitude = coordinates.Lat.Lat;
+            Longitude = coordinates.Lon.Lon;
             this.DateTime = dateTime;
             this.Unit = unit;
             this.Language = language;

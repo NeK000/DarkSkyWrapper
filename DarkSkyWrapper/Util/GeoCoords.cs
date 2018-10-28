@@ -6,12 +6,12 @@ namespace DarkSkyWrapper.Util
 {
     public class GeoCoords
     {
-        public Latitude lat { get; set; }
-        public Longitute lon { get; set; }
+        public Latitude Lat { get; set; }
+        public Longitute Lon { get; set; }
         public GeoCoords(Latitude latitude, Longitute longitute)
         {
-            lat = latitude;
-            lon = longitute;
+            Lat = latitude;
+            Lon = longitute;
         }
     }
 }
